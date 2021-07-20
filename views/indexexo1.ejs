@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<%- include('./partials/head'); %>
+<title>Exo Biology I</title>
+  </head>
+  <body>
+    <h1>Exo Biology I</h1>
+<!-- w7d3 morning lab Biscoff Bakery -->   
+<br>
+<br>
+<h3>Summary</h3>
+<ul>
+  <% for (const [index,scientist] of scientists.entries()) 
+      {%>
+          <li>
+            <a href='http://localhost:3000/indexexo1/<%= index%>'>
+              <%= scientist.name %> </a>
+              Description: $<%= scientist.color %>
+              <form action='/fruits/<%=index%>?_method=DELETE' method='POST'>
+                <input type="submit" value="DELETE"/>
+            </form>
+          </li>
+      <%} 
+  %>
+</ul>
+<button><a class="menu" href="/newexo1">Create a scientist</a></button>
+  </body>
+</html>
+
+
+
+
+

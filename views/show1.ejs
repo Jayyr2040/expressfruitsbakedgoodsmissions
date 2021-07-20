@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<%- include('./partials/head'); %>
+<title>Baked Good Bakery</title>
+  </head>
+  <body>
+    <h1><%= bakedgood.name %></h1>
+    <br>
+    <br>
+    <p>
+      Price is $<%= bakedgood.price %>.
+      <br>
+      <img src='<%= bakedgood.img%>' alt ="">
+      <br>
+      <a href='http://localhost:3000/bakedgoods/'>Back to Menu</a>  
+    </p>
+  </body>
+</html>
+

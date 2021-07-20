@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/app.css">    
+    <title>Fruit Show</title>
+  </head>
+  <body>
+    <h1>Fruits show page</h1>
+    <p>
+      The <%= fruit.name %> is <%= fruit.color %>.
+      <% if (fruit.readyToEat === true) { %>
+        <span> It is ready to eat </span>
+      <% } else { %>
+        <span> It is not ready to eat </span>
+      <% } %>
+      <a href='http://localhost:3000/fruits/'>Back to Index Page</a>  
+    </p>
+    <a href='/fruits/<%=pos%>/edit'>Edit</a>
+    <form action='/fruits/<%=pos%>?_method=DELETE' method='POST'>
+      <button>Delete</button>
+    </form>
+  </body>
+</html>
+

@@ -1,0 +1,13 @@
+body {
+    background-image: url('https://devportos.wpengine.com/wp-content/uploads/2018/04/portos-web-2-200346-1-876x688.jpg');
+    background-size:100vw;    
+}
+
+h1, p,  ul, a, h3 {
+    color: white
+}
+
+.menu {
+    color:black
+}
+

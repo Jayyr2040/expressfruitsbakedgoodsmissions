@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Mission Index</title>
+  </head>
+  <body>
+    <h1>Mission index page</h1>
+<!-- backend way -->
+   <ul>
+        <% for (const [index,mission] of marsMissions.entries()) 
+            {%>
+                <li>
+                   
+                    <a href='http://localhost:3000/missions/<%= index%>'><%= mission.name %></a>
+                </li>
+            <%} 
+        %>
+   </ul>
+
+  </body>
+</html>
+

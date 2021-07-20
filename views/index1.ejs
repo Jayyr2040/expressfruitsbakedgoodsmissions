@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<%- include('./partials/head'); %>
+<title>Baked Goods Bakery</title>
+  </head>
+  <body>
+    <h1>Baked Goods Bakery</h1>
+<!-- w7d3 morning lab Biscoff Bakery -->   
+<br>
+<br>
+<h3>Menu</h3>
+<ul>
+  <% for (const [index,bakedgood] of bakedgoods.entries()) 
+      {%>
+          <li>
+            <a href='http://localhost:3000/bakedgoods/<%= index%>'>
+              <%= bakedgood.name %> </a>
+              Price: $<%= bakedgood.price %>
+          </li>
+      <%} 
+  %>
+</ul>
+<button><a class="menu" href="/bakedgoods/form">Create a New Baked Good</a></button>
+  </body>
+</html>
+
+
+
+
+
